@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="textEncryptor.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="EK1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">VP4A7rDs</Value>
+    </Setting>
+    <Setting Name="EK2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Fe6EXS3D</Value>
+    </Setting>
+    <Setting Name="EK3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">z6yY9oEM</Value>
+    </Setting>
+    <Setting Name="EK4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tP3tUoOj</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

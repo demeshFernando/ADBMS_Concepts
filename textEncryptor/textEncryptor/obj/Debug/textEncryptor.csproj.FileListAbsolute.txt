@@ -1,0 +1,11 @@
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\bin\Debug\textEncryptor.exe.config
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\bin\Debug\textEncryptor.exe
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\bin\Debug\textEncryptor.pdb
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.csprojAssemblyReference.cache
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.main_home.resources
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.Properties.Resources.resources
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.csproj.GenerateResource.cache
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.csproj.CoreCompileInputs.cache
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.exe
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.pdb
+D:\Demesh\NSBM\Year 03\Year 03 Semester 01\advanced database management system\2 - Project\textEncryptor\textEncryptor\obj\Debug\textEncryptor.createQueries.resources

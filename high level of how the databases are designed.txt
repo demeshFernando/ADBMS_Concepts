@@ -1,0 +1,88 @@
+involving parties
+	money buyer
+	owner or the staff
+	bank or the third party owners of the same bank.
+
+tables, 
+	1. customers
+		id | firstName | lastName | otherNames | addressLine1 | addressLine2 | addressLine3 | city | registeredBy | secondaryContactMethod - this entry is to verify how the user wants to send there reminder messages or any other posts 
+
+	2. customer phone number 
+		phoneNumber | id | email
+
+	3. pawned item details 
+		id | ownerId | itemName | description | estimatedCarrotValue | estimatedValue | approvedAmount(0) | descriptioApprovedAmount | takenAmount(1) | calculateInterestFor (0/1)| yearlyInterest | paymentMethod - how often the payment will happen | approvedStaff | ownerVerification | storedLockerId
+
+	4. staff members
+		id | firstName | lastName | otherNames | addressLine1 | addressLine2 | addressLine3 | city | registeredDay | registeredMonth | registeredYear | positionId | agrementLink | jobDescriptionLink | CVLink |applicableLeaves | availableLeaves | currentemployementstatus - this will state whether the staff member is already in the organization or resigned or else an intern
+		4.1 position
+			id | position | basicSalary
+		4.2 attendanceDetails - all the days and times are stored in 24 hour time format.
+			id | inDay | inMonth | inYear | inHour | inMinute | outDay | outMonth | outYear | outHour | outMinute | memberId
+		4.3 paySheets
+			id | employeeId | crediteBy | creditedAccountNumber | bankName | amount | day | month | year | hour | minute | beneficialMonth - this field is dedicated for mention for what month this salary is reserved for | EPFAmount | Tax | other | description | 
+		4.5 EPF/ETF
+			id | workerId | registeredDay | registeredMonth | registeredyear | registeredHour | registeredMinute | certifyingOfficer | certifiedDay | certifiedMonth | certifiedYear | certifiedHour | certifiedMinute | memberConfirmationDay | memberConfirmationMonth | memberConfirmationYear | isSigned
+			4.5.1 EPF/ETF previous employement details
+				id | zone | employerNumber | memberNumber
+
+		4.6 leaveApplications
+			id | day | month | year | hour | minute | wantedDay | wantedMonth | wantedYear | wantedHour | wantedMinute | reason | approvedStatus | approvedBy | jobReplacingWith
+
+	5. log - to store all the transactions 
+		5.1 sensitive transaction log 
+			id | table | description | hour | minute | day | month | year | transferedAmount | transactionConfirmation | paymentMethod | accountNumber | bank | actionPerformedBy | capital - this will store capital amount from transfered amount
+
+		5.2 other type logs
+			id | table | description | hour | minute | day | month | year | actionPerformedBy
+
+	6. creadentials of the staff to verify them 
+		id | username | password | email | bankAccountNumber | 
+
+	7. staff phone numbers 
+		phoneNumber | id
+
+	8. interest details - 
+
+	9. remind letters - need to see the remind letter body
+	10. bill details of the payed bills 
+		id | customerId | detailsFilledBy | isCustomerAware | type - this will mention whether the bill to a customer or any other one | isIncome - this is bool to identify whether the bill for an income or for a payout
+
+	11. remind letter types
+		id | day | month | year | hour | minute | isSecond - this means whether the sending letter is first remind letter or not | relatedMonth | sentaddressLine1 | sentAddressLine2 | sentAddressLine3 | sentCity
+
+	12. remind letter format
+
+	13. black listed customers 
+		id | firstName | lastName | otherNames | reason | addressLine1 | addressLine2 | addressLine3 | city | agrementId | blockedBy | reason | agrementLink
+
+	14. third party vendors - this is to store important other pawneres or other contacts 
+		id | ownerId | itemId | organizationName | statusWhenBuying | finalDealAmount | statusCheckedBy | ownerVerification | transactionVerification | transactionConfirmedBy | day | month | year | hour | minute
+
+	15. lockerDetails
+		id | lockerName | addressLine1 | addressLine2 | addressLine3 | city | lockerOwner | startedDay | startedMonth | startedYear | description
+
+	16. other organization related stakeholders
+		id | firstName | lastName | addressLine1 | addressLine2 | addressLine3 | city | registeredDay | registeredMonth | registeredYear | registeredBy | description - make a description of the contact
+
+	17. access levels - this table will store all the details that a staff member has inside the company. lower level access level is primary. other than that the acess levels will increase. all the access level will get in the primary level. 
+		id | person/position id | accessLevel | grantedBy
+
+questions, 
+	1. will they produce agrement ID? if yes is that agrement made for only one item or for all the pawning item?
+	2. need to see a remind letter. if there are many need to see all of them.
+	3. did we keep any guarantor for this pawned item? No
+	4. is there any default charge? if so how much and when is the limit? 
+	5. get EPF account details what details are required and how are they working?
+	6. storing the golds?
+
+10/15/2023
+	7. how the interest will be calculated for a gold?
+
+operations, 
+	1. make reminders for new employees to create a new EPF or ETF account to the owner of the comapny or to the HR. because within 14 days it is required to open a new EPF account to the employee by the employer of the company.
+	2. if a customer already signed a bill no one can change the bill details again 
+	3. no agrement can change after approval. 
+	4. derived attributes need to be added. they are not added.
+	5. in EPF/ETF table you can add a trigger. because isSigned attribute only can be signed by the related user of the organization. and also he or she cannot change the changed status later.		
+	
